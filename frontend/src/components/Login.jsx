@@ -28,7 +28,7 @@ const Login = ({ onSubmit, onSwitchMode }) => {
     //const [message, setMessage] = useState(false);
     const navigate = useNavigate()
     const [searchParams] = useSearchParams()
-    const API_URL = import.meta.env.VITE_API_BASE_URL || "https://expense-tracker-1-2ly3.onrender.com";
+const API_URL = import.meta.env.VITE_API_BASE_URL || "https://expense-tracker-1-2ly3.onrender.com";
 
     
     useEffect(() => {
