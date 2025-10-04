@@ -173,7 +173,6 @@ expense-tracker/
 │   │   ├── assets/
 │   │   │   └── dummy.jsx
 │   │   ├── components/
-
 │   │   │   ├── ExpenseItem.jsx
 │   │   │   ├── ExpenseModel.jsx
 │   │   │   ├── Layout.jsx
@@ -182,7 +181,6 @@ expense-tracker/
 │   │   │   ├── Profile.jsx
 │   │   │   ├── Sidebar.jsx
 │   │   │   └── SignUp.jsx
-
 │   │   ├── pages/
 │   │   │   ├── Dashboard.jsx
 │   │   │   ├── ExpenseChartPage.jsx
@@ -210,7 +208,6 @@ expense-tracker/
 - **MongoDB** - Database
 - **Mongoose** - MongoDB object modeling
 - **JWT** - Authentication
-- **Passport.js** - OAuth authentication (Google)
 
 - **Node-cron** - Scheduled tasks
 
