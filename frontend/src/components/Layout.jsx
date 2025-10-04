@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom'
 import axios from 'axios'
 import { TrendingUp, Circle, Clock, Zap, DollarSign } from 'lucide-react'
 
-const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'http://localhost:4000'}/api/expenses`
+const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'https://expense-tracker-1-2ly3.onrender.com'}/api/expenses`
 
 const Layout = ({ user = {}, onLogout }) => {
   const [expenses, setExpenses] = useState([]);

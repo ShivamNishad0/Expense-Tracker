@@ -5,7 +5,7 @@ import axios from 'axios'
 import { format, isToday } from 'date-fns'
 import ExpenseModel from './ExpenseModel'
 
-const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'https://task-tracker-backend-vtvb.onrender.com/'}/api/expenses`
+const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'https://expense-tracker-1-2ly3.onrender.com'}/api/expenses`
 
 const ExpenseItem = ({ expense, onRefresh, onLogout }) => {
     const [showMenu, setShowMenu] = useState(false)

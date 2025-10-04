@@ -105,7 +105,7 @@ const TermsOfService = () => {
             </p>
             <p className="text-gray-700">
               Email: legal@expensetracker.com<br />
-              Phone: +1 (555) 123-4567
+              Phone: +91 8887756715
             </p>
           </section>
 

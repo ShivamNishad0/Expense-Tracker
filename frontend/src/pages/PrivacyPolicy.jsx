@@ -72,8 +72,8 @@ const PrivacyPolicy = () => {
               If you have any questions about this Privacy Policy, please contact us at:
             </p>
             <p className="text-gray-700">
-              Email: privacy@tasktracker.com<br />
-              Phone: +1 (555) 123-4567
+              Email: privacy@expensetracker.com<br />
+              Phone: +91 8887756715
             </p>
           </section>
 

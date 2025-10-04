@@ -12,7 +12,7 @@ import Sidebar from './Sidebar';
 
 
 // const API_URL='https://task-tracker-backend-vtvb.onrender.com/'
-const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://task-tracker-backend-vtvb.onrender.com/'
+const API_URL = import.meta.env.VITE_API_BASE_URL || 'https://expense-tracker-1-2ly3.onrender.com'
 const Profile = ({setCurrentUser, onLogout}) => {
 
 const [profile, setProfile]=useState({name: "", email: "", phone: "" })

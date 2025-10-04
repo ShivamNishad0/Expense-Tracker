@@ -7,7 +7,7 @@ import ExpenseModel from '../components/ExpenseModel'
 import Sidebar from '../components/Sidebar'
 import axios from 'axios'
 
-const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'https://task-tracker-backend-vtvb.onrender.com/'}/api/expenses`
+const API_URL = `${import.meta.env.VITE_API_BASE_URL || 'https://expense-tracker-1-2ly3.onrender.com'}/api/expenses`
 
 const Dashboard = () => {
     const outletContext = useOutletContext() || {}

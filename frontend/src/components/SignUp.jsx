@@ -9,7 +9,7 @@ import { Inputwrapper,BUTTONCLASSES,MESSAGE_SUCCESS,MESSAGE_ERROR } from '../ass
 
 
 // Recreated constants to make the file self-contained.
-const API_URL = import.meta.env.VITE_API_BASE_URL || "https://task-tracker-backend-vtvb.onrender.com/";
+const API_URL = import.meta.env.VITE_API_BASE_URL || "https://expense-tracker-1-2ly3.onrender.com";
 
 
 const FIELDS = [
