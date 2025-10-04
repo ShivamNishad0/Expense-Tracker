@@ -16,7 +16,7 @@ RUN npm ci --legacy-peer-deps
 COPY frontend/ .
 
 # Set API base URL for Vite build
-ENV VITE_API_BASE_URL=http://localhost:4000
+ENV VITE_API_BASE_URL=https://expense-tracker-1-2ly3.onrender.com
 
 # Build the application
 RUN npm run build
