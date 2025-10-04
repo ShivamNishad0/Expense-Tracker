@@ -2,7 +2,6 @@ import userModel from "../models/userModel.js"
 import bcrypt from "bcrypt"
 import validator from "validator"
 import jwt from "jsonwebtoken"
-import { sendWelcomeMessage } from "../utils/whatsapp.js"
 
 
 // Create JWT token
@@ -53,11 +52,6 @@ export async function registerUser(req, res) {
     });
 
     await newUser.save();
-
-    // Send welcome message on WhatsApp if phone is provided
-    if (phone) {
-      await sendWelcomeMessage(phone);
-    }
 
     const token = createToken(newUser._id);
     res.status(201).json({
@@ -230,26 +224,4 @@ export async function getCurrentUser(req, res) {
     console.log(error);
     res.status(500).json({ success: false, message: "Internal server error" });
   }
-}
-
-// ======================= Google OAuth =======================
-export function googleAuth(req, res, next) {
-  passport.authenticate('google', { scope: ['profile', 'email'] })(req, res, next);
-}
-
-export function googleAuthCallback(req, res, next) {
-  passport.authenticate('google', { failureRedirect: '/login', session: true }, (err, user) => {
-    if (err || !user) {
-      return res.redirect('/login');
-    }
-    req.logIn(user, (err) => {
-      if (err) {
-        return res.redirect('/login');
-      }
-      // Create JWT token for the user
-      const token = createToken(user._id);
-      // Redirect to frontend with token as query param or set cookie
-      res.redirect(`${process.env.FRONTEND_URL || 'http://localhost:3000'}/?token=${token}`);
-    });
-  })(req, res, next);
 }

@@ -6,9 +6,6 @@ import authMiddleware from './middleware/auth.js'
 import cron from 'node-cron'
 import userRouter from './routes/userRoute.js'
 import expenseRouter from './routes/expenseRoute.js'
-import passport from 'passport'
-import session from 'express-session'
-import './config/passport.js'
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -17,9 +14,6 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(session({ secret: process.env.SESSION_SECRET || 'your_secret_key', resave: false, saveUninitialized: true }));
-app.use(passport.initialize());
-app.use(passport.session());
 
 // CONNECT TO DB
 connectDB();
