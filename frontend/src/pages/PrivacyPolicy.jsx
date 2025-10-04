@@ -16,7 +16,6 @@ const PrivacyPolicy = () => {
             <ul className="list-disc list-inside text-gray-700 mb-4">
               <li>Name and contact information</li>
               <li>Account credentials</li>
-              <li>Phone number (for WhatsApp notifications)</li>
               <li>Task-related data you create</li>
             </ul>
           </section>
@@ -28,23 +27,15 @@ const PrivacyPolicy = () => {
             </p>
             <ul className="list-disc list-inside text-gray-700 mb-4">
               <li>Provide, maintain, and improve our services</li>
-              <li>Send you WhatsApp notifications for account activities</li>
               <li>Process and manage your tasks</li>
               <li>Communicate with you about our services</li>
             </ul>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">3. WhatsApp Communications</h2>
-            <p className="text-gray-700 mb-4">
-              By providing your phone number during registration, you consent to receive WhatsApp
-              messages from us for important account notifications, such as welcome messages and
-              service updates. You can opt out of these communications at any time.
-            </p>
-          </section>
+          {/* Removed WhatsApp Communications section as per user request */}
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">4. Data Security</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">3. Data Security</h2>
             <p className="text-gray-700 mb-4">
               We implement appropriate security measures to protect your personal information
               against unauthorized access, alteration, disclosure, or destruction.
@@ -52,7 +43,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">5. Data Sharing</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">4. Data Sharing</h2>
             <p className="text-gray-700 mb-4">
               We do not sell, trade, or otherwise transfer your personal information to third parties
               without your consent, except as described in this policy or as required by law.
@@ -60,7 +51,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">6. Your Rights</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">5. Your Rights</h2>
             <p className="text-gray-700 mb-4">
               You have the right to access, update, or delete your personal information.
               Contact us if you wish to exercise these rights.
@@ -68,7 +59,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">7. Changes to This Policy</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">6. Changes to This Policy</h2>
             <p className="text-gray-700 mb-4">
               We may update this Privacy Policy from time to time. We will notify you of any
               changes by posting the new policy on this page.
@@ -76,7 +67,7 @@ const PrivacyPolicy = () => {
           </section>
 
           <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">8. Contact Us</h2>
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">7. Contact Us</h2>
             <p className="text-gray-700 mb-4">
               If you have any questions about this Privacy Policy, please contact us at:
             </p>

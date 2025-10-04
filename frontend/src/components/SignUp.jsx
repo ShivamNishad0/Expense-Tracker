@@ -53,7 +53,7 @@ const SignUp = ({ onSwitchMode }) => {
                     <h2 className='text-2xl font-bold text-gray-800'>
                         Create Account
                     </h2>
-                    <p className='text-gray-500 text-sm mt-1'>Join Task Tracker to manage your tasks</p>
+                    <p className='text-gray-500 text-sm mt-1'>Join Expense Tracker to manage your expenses</p>
                 </div>
                 {message.text && (
                     <div className={message.type === 'success' ? MESSAGE_SUCCESS : MESSAGE_ERROR}>

@@ -10,7 +10,7 @@ const TermsOfService = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">1. Acceptance of Terms</h2>
             <p className="text-gray-700 mb-4">
-              By accessing and using Task Tracker, you accept and agree to be bound by the terms
+              By accessing and using Expense Tracker, you accept and agree to be bound by the terms
               and provision of this agreement. If you do not agree to abide by the above,
               please do not use this service.
             </p>
@@ -19,7 +19,7 @@ const TermsOfService = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">2. Use License</h2>
             <p className="text-gray-700 mb-4">
-              Permission is granted to temporarily use Task Tracker for personal, non-commercial
+              Permission is granted to temporarily use Expense Tracker for personal, non-commercial
               transitory viewing only. This is the grant of a license, not a transfer of title,
               and under this license you may not:
             </p>
@@ -44,14 +44,7 @@ const TermsOfService = () => {
             </p>
           </section>
 
-          <section className="mb-8">
-            <h2 className="text-2xl font-semibold text-gray-800 mb-4">4. WhatsApp Communications</h2>
-            <p className="text-gray-700 mb-4">
-              By providing your phone number, you consent to receive WhatsApp messages from us
-              for account-related notifications. You may opt out of these communications at any time
-              by contacting us.
-            </p>
-          </section>
+          {/* Removed WhatsApp Communications section as per user request */}
 
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">5. Prohibited Uses</h2>
@@ -80,7 +73,7 @@ const TermsOfService = () => {
           <section className="mb-8">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">7. Limitation of Liability</h2>
             <p className="text-gray-700 mb-4">
-              In no event shall Task Tracker, nor its directors, employees, partners, agents,
+              In no event shall Expense Tracker, nor its directors, employees, partners, agents,
               suppliers, or affiliates, be liable for any indirect, incidental, special,
               consequential, or punitive damages, including without limitation, loss of profits,
               data, use, goodwill, or other intangible losses.
@@ -111,7 +104,7 @@ const TermsOfService = () => {
               If you have any questions about these Terms of Service, please contact us at:
             </p>
             <p className="text-gray-700">
-              Email: legal@tasktracker.com<br />
+              Email: legal@expensetracker.com<br />
               Phone: +1 (555) 123-4567
             </p>
           </section>

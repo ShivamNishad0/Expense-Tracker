@@ -142,7 +142,7 @@ const Login = ({ onSubmit, onSwitchMode }) => {
                     <h2 className='text-2xl font-bold text-gray-800'>
                         Welcome Back!
                     </h2>
-                    <p className='text-gray-500 text-sm mt-1'>Sign in to continue to Task Tracker</p>
+                    <p className='text-gray-500 text-sm mt-1'>Sign in to continue to Expense Tracker</p>
                 </div>
                 <form onSubmit={handleSubmit} className='space-y-4'>
                     {fields.map(({ name, type, placeholder, icon: Icon, isPassword }) => (

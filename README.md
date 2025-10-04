@@ -1,11 +1,11 @@
 # 💰 Expense-Tracker
 
-> A modern, full-stack expense tracking application built with Node.js and React, featuring AI-powered chatbot assistance, analytics, and WhatsApp notifications
+> A modern, full-stack expense tracking application built with Node.js and React, featuring analytics
 
 [![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/)
 [![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactjs.org/)
 [![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![Google Gemini](https://img.shields.io/badge/Google%20Gemini-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://ai.google.dev/)
+
 
 ## ✨ Features
 
@@ -17,15 +17,9 @@
 - 📱 **Mobile-Friendly**: Fully responsive design for all devices
 - 🔒 **Secure API**: Protected backend with authentication middleware
 
-### AI-Powered Features
-- 🤖 **AI Chatbot**: Get help with expenses using Google Gemini AI
-- 🔍 **Expense Query**: Search and analyze expenses with natural language
-- 📝 **Guidance Generation**: Receive financial advice and budgeting tips
-- 💡 **Smart Suggestions**: Get recommendations for expense optimization
-- 💬 **Interactive Chat**: Conversational interface with expense details
+
 
 ### Additional Features
-- 📱 **WhatsApp Integration**: Send expense notifications via WhatsApp (placeholder implementation)
 - 📈 **Expense Summary**: Get detailed expense summaries and reports
 - 🏷️ **Categorization**: Organize expenses by categories
 - 📅 **Date-based Tracking**: Track expenses over time
@@ -55,7 +49,7 @@ Before you begin, ensure you have the following installed:
    MONGO_URI=<your-mongodb-connection-string>
    PORT=4000
    JWT_SECRET=<your-jwt-secret>
-   GEMINI_API_KEY=<your-gemini-api-key>
+
    SESSION_SECRET=<your-session-secret>
    ```
 
@@ -122,7 +116,7 @@ Before you begin, ensure you have the following installed:
    MONGO_URI=your_mongodb_connection_string
    PORT=4000
    JWT_SECRET=your_jwt_secret
-   GEMINI_API_KEY=your_gemini_api_key
+
    SESSION_SECRET=your_session_secret
    ```
 
@@ -170,8 +164,6 @@ expense-tracker/
 │   ├── routes/
 │   │   ├── expenseRoute.js
 │   │   └── userRoute.js
-│   ├── utils/
-│   │   └── whatsapp.js
 │   ├── server.js
 │   ├── package.json
 │   ├── .env
@@ -181,7 +173,7 @@ expense-tracker/
 │   │   ├── assets/
 │   │   │   └── dummy.jsx
 │   │   ├── components/
-│   │   │   ├── Chatbot.jsx
+
 │   │   │   ├── ExpenseItem.jsx
 │   │   │   ├── ExpenseModel.jsx
 │   │   │   ├── Layout.jsx
@@ -189,9 +181,8 @@ expense-tracker/
 │   │   │   ├── Navbar.jsx
 │   │   │   ├── Profile.jsx
 │   │   │   ├── Sidebar.jsx
-│   │   │   ├── SignUp.jsx
-│   │   │   ├── TaskItem.jsx
-│   │   │   └── TaskModel.jsx
+│   │   │   └── SignUp.jsx
+
 │   │   ├── pages/
 │   │   │   ├── Dashboard.jsx
 │   │   │   ├── ExpenseChartPage.jsx
@@ -220,7 +211,7 @@ expense-tracker/
 - **Mongoose** - MongoDB object modeling
 - **JWT** - Authentication
 - **Passport.js** - OAuth authentication (Google)
-- **Google Gemini AI** - AI-powered assistance
+
 - **Node-cron** - Scheduled tasks
 
 ### Frontend
@@ -265,10 +256,6 @@ Authorization: Bearer <your_jwt_token>
 #### Other Endpoints
 - `GET /` - API status check
 
-### AI Chatbot Endpoints
-- `POST /api/expenses/chatbot/query` - Query expenses with AI analysis
-  - Body: `{ "query": "string", "history": [...] }`
-- `GET /api/expenses/chatbot/suggestions` - Get AI-generated expense suggestions
 
 ### Request/Response Examples
 
@@ -283,14 +270,7 @@ POST /api/expenses/gp
 }
 ```
 
-**Chatbot Query:**
-```json
-POST /api/expenses/chatbot/query
-{
-  "query": "How much did I spend on food this month?",
-  "history": []
-}
-```
+
 
 ## 🔧 Available Scripts
 
@@ -303,39 +283,14 @@ POST /api/expenses/chatbot/query
 - `npm run preview` - Preview production build
 - `npm run lint` - Run ESLint
 
-## 🤖 AI Chatbot Usage
 
-The AI chatbot helps you manage and understand your expenses better:
-
-1. **Access the Chatbot**: Click the floating chat button on the Dashboard
-2. **Ask Questions**: Type natural language queries about your expenses
-3. **Get Help**: Receive financial advice, budgeting tips, and expense analysis
-
-### Example Interactions
-- *"How much did I spend this month?"*
-- *"What are my biggest expense categories?"*
-- *"Give me tips to reduce my spending"*
-
-### Setup Requirements
-- Add `GEMINI_API_KEY` to your backend `.env` file
-- Get the API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-- Ensure backend has `@google/generative-ai` installed
-
-## 📱 WhatsApp Integration
-
-The application includes a placeholder for WhatsApp notifications:
-
-- **Welcome Messages**: Send welcome messages to new users
-- **Expense Alerts**: Notify users of expense milestones (to be implemented)
-
-To implement actual WhatsApp integration, use services like Twilio or WhatsApp Business API.
 
 ## 🧪 Testing
 
 1. **Local Testing**:
    - Start backend: `cd backend && npm start`
    - Start frontend: `cd frontend && npm run dev`
-   - Create sample expenses and test the chatbot
+   - Create sample expenses and test the application
 
 2. **API Testing**:
    - Use tools like Postman to test endpoints
@@ -344,10 +299,8 @@ To implement actual WhatsApp integration, use services like Twilio or WhatsApp B
 ## 🔧 Troubleshooting
 
 ### Common Issues
-- **API Key Errors**: Verify `GEMINI_API_KEY` is set correctly
 - **Authentication Failures**: Check JWT token validity
 - **No Expenses Found**: Ensure expenses exist and match query terms
-- **AI Response Issues**: Check Gemini API quota and network connectivity
 - **Build Errors**: Ensure all dependencies are installed
 
 ### Getting Help
