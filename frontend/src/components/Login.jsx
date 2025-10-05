@@ -49,13 +49,12 @@ const API_URL = import.meta.env.VITE_API_BASE_URL || "https://expense-tracker-1-
             } else {
               localStorage.clear()
             }
-          } catch{
-
+          } catch {
             localStorage.clear()
           }
         })()
       }
-    }, [navigate, onSubmit])
+    }, [navigate, onSubmit, API_URL])
 
     useEffect(() => {
       const token = searchParams.get('token')
@@ -73,7 +72,7 @@ const API_URL = import.meta.env.VITE_API_BASE_URL || "https://expense-tracker-1-
               toast.success("Login successful! Redirecting...")
               navigate('/')
             }
-          } catch (err) {
+          } catch {
             toast.error("OAuth login failed")
           }
         })()
